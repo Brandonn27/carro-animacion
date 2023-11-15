@@ -1,0 +1,106 @@
+.parent-1{
+    position: relative;
+    width: 100%;
+}
+
+.carrito{
+    position: relative;
+    bottom: 5rem;
+    left: 15rem;
+    animation: carro-animado 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.carritoPadre{
+    
+    position: relative;
+    bottom: -36rem;
+    left: -5rem;
+    animation: carro-animado 1s linear infinite;
+    animation-play-state: paused;
+}
+
+
+.fondo{
+    background-image: url(./images/fondo.png);
+    margin-left: 35rem;
+    width: 900px;
+    height: 894px;
+    animation: fondo-animado 1s linear infinite;
+    animation-play-state: paused;
+ 
+}
+
+.luz{
+    position: absolute;
+    bottom: 9.7rem;
+    left: 52.5rem;
+    animation: luz 0.5s linear infinite;
+    animation-play-state: paused;
+}
+
+.llanta{
+    position: absolute;
+    bottom: 6.5rem;
+    left: 43.4rem;
+    animation: llanta-animada linear 1s infinite;
+    animation-play-state: paused;
+}
+
+.llanta2{
+    position: absolute;
+    bottom: 6.5rem;
+    left: 19.4rem;
+    animation: llanta-animada linear 1s infinite;
+    animation-play-state: paused;
+}
+
+.sprite{
+   background-image: url(./images/sprite-humito.png);
+   position: absolute;
+   left: 40rem;
+
+}
+
+@keyframes llanta-animada {
+  
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes luz {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+@keyframes carro-animado {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-5px) translateY(-2px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes fondo-animado {
+    100%{
+        background-position-x: -1357px;
+    }
+}
+
+@keyframes humito {
+
+    
+}
